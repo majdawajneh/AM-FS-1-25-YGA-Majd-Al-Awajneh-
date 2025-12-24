@@ -49,7 +49,8 @@ header{
 }
 .Lets-Talk a{
     text-decoration: none;
-    color: white;
+    color:#c48136;
+    font-size: 16px;
 }
 .Lets-Talk a:hover{
     color: #c48136;
@@ -74,7 +75,7 @@ header{
     color: #c48136;
     font-weight: 200;
 }
-.Hero .view-works{
+.Hero button{
     width: 170px;
     height: 50px;
     border: 1px solid #c48136;
@@ -82,6 +83,7 @@ header{
 }
 .view-works a{
     text-decoration: none;
+    font-size: 16px;
     color:#c48136;
 }
 
@@ -108,6 +110,7 @@ header{
 .Details .cv-button a{
     text-decoration: none;
     color:#c48136;
+    font-size: 16px;
 }
 .Services{
     
