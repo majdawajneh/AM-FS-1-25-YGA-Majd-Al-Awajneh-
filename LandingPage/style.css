@@ -16,8 +16,10 @@ body{
 /* Here Navigation and header css */
 
 header{
-    padding: 50px;
+    padding: 40px;
     height: 100px;
+    z-index: 9;
+    background-color: #27181d
 }
 
 .navbar{
@@ -30,7 +32,7 @@ header{
 .logo a{
     text-decoration: none;
     color: #c48136;
-    font-size: 35px;
+    font-size: 38px;
     font-weight: 200;
 }
 .nav-links{
@@ -42,13 +44,13 @@ header{
 .nav-links a{
     color: #c48136;
     text-decoration: none;
-    font-size: 16px;
-    transition: color 0.3s;
+    font-size: 18px;
+    transition: 0.5s;
 }
 .nav-links a:hover{
     color: rgb(255, 255, 255);
     font-size: 20px;
-    transition: .5s;
+    transition: 0.5s;
 }
 .Lets-Talk{
     display: inline-block;
@@ -72,8 +74,8 @@ header{
 /* Here hero section customization */
 
 .Hero{
-    height: 800px;;
-    border-bottom: 4px solid #c48136;
+    height: 800px;
+    background-color: #3a222b;
 }
 .Hero .container{
     position: absolute;
@@ -122,7 +124,6 @@ header{
   display: flex;
   align-items: center;      
   justify-content: left;  
-  border-bottom: 4px solid #c48136;
 }
 .details-div {
   padding: 140px 395px;         ;
@@ -155,9 +156,9 @@ header{
     transition: .3s;
 }
 .Services{
+    background-color: #3a222b;
     color: rgb(255, 255, 255);
     height: 620px;
-    border-bottom: 4px solid #c48136;
 }
 .services-cards{
     display:flex;
@@ -197,57 +198,193 @@ header{
 
 /*   works section here !! */
 
-.My-works{
+.gallery{
     
     color: rgb(255, 255, 255);
-    height: 900px;
+    height: 1600px;
 }
-@media (max-width: 576px) {
-
-  header {
-    padding: 20px;
-    height: auto;
-  }
-
-  .navbar {
-    padding-top: 0px;
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .nav-links {
-    flex-wrap: wrap;
-    gap: 15px;
+.gallery h1{
+    position: absolute;
+    padding: 110px 380px;   
+}
+.home-gallery-pic{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
     justify-content: center;
-  }
-
-  .Hero {
-    padding: 0 20px;
-    height: auto;
+    align-items: center;
+    height: 1365px;
+    padding: 180px 450px;
+}
+.home-gallery-pic img{
+    height: 500px;
+    width: 550px;
+    border-radius: 2%;
+    border: 1px solid rgba(255, 255, 255, 0.452);
+    transition: 1s;
+}
+.home-gallery-pic img:hover{
+    height: 550px;
+    width: 600px;
+    transition: 1s;
+    opacity: 30%;
+}
+.home-gallery-pic a{
+    color: #c48136;
+    text-decoration: none;
+    font-size: 24px;
+    transition: color 1s;
+    font-weight: bold;
+}
+.home-gallery-pic a:hover{
+    text-decoration: underline;
+    transition: 1s;
+}
+.gallery .more-works{
+    position: absolute;
+    left: 19.8%;
+    display: inline-block;
     text-align: center;
-    justify-content: center;
-  }
-
-  .Hero h2 {
-    font-size: 26px;
-  }
+    padding: 15px;
+    width: 1150px;
+    height: 55px;
+    border: 1px solid #c48136;
+    background: transparent;
+    text-decoration: none;
+    color:#c48136;
+    font-size: 18px;
+    transition: .3s;
 }
-@media (max-width: 992px) {
+.more-works:hover{
+    background-color: #c48136;
+    color: white;
+}
+/* FOOTER SECTION HERE ...! */
+footer{
+    height: 646.5px;
+    color: white;
+    background-color: #3a222b;
+}
+footer h1{
+    text-align: left;
+    padding: 100px 360px;
+    font-size: 40px;
+}
+footer a{
+    color: #c48136;
+    text-decoration: none;
+}
+footer a:hover{
+    color: #c4823688;
+}
+footer .lastone{
+    text-align: center;
+    padding-top: 340px;
+    color: rgba(255, 255, 255, 0.616);
+}
 
-  header {
-    padding: 30px;
-  }
 
-  .navbar {
-    gap: 80px;
-  }
+/* Gallery Page Section !!!!! */
 
-  .Hero {
-    padding: 0 100px;
-    height: auto;
-  }
+.Last-Works h1{
+    color: white;
+    position: absolute;
+    padding: 100px 380px;
+}
+.gallery-pic{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    height: 1365px;
+    padding: 180px 450px;
+}
+.gallery-pic img{
+    height: 500px;
+    width: 550px;
+    border-radius: 2%;
+    transition: 0.5s;
+}
+.gallery-pic img:hover{
+    height: 550px;
+    width: 600px;
+    transition: 1s;
+    opacity: 30%;
+}
+.gallery-pic a{
+    color: #c48136;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+}
+.gallery-pic a:hover{
+    text-decoration: underline;
+}
 
-  .Hero h2 {
-    font-size: 30px;
-  }
+/* SERVICES SECTION HERE...! */
+
+.Services h2{
+    color: white;
+    position: absolute;
+    padding: 40px 150px;
+}
+.services-grid{
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30PX;
+}
+.services-grid .service{
+    width: 550px;
+    height: 400px;
+    padding: 20px;
+    border: 1px solid #c48136;
+    color: white;
+    text-align: center;
+    font-size: 14px;
+}
+.services-grid .service p{
+    color: rgba(255, 255, 255, 0.774);
+}
+.services-grid .service .content1{
+    width: 500px;
+    position: absolute;
+    padding: 70px;
+    left: 120px;
+    line-height: 50px;
+
+}
+.services-grid .service .content2{
+    width: 650px;
+    position: absolute;
+    padding: 70px;
+    left: 640px;
+    line-height: 50px;
+}
+.services-grid .service .content3{
+    width: 650px;
+    position: absolute;
+    padding: 70px;
+    right: 60px;
+    line-height: 50px;
+}
+.services-grid .service a{
+    text-decoration: none;
+    color: #c48136;
+    display: inline-block;
+    border: 1px solid #c48136;
+    transition: 0.5s;
+    width: 180px;
+    height: 50px;
+    font-weight: bold;
+}
+.services-grid .service a:hover{
+    color: white;
+    background-color: #c48136;
+    transition: 0.5s;
+}
+.services-grid .service-icon{
+    font-size: 60px;
 }
