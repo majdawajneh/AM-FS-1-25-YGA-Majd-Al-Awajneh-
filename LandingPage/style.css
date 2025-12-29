@@ -1,3 +1,15 @@
+:root {
+    --brown-mix-1: #F8F5F0;  
+    --brown-mix-2: #E1D7C6;  
+    --brown-mix-3: #C4B6A4;  
+    --brown-mix-4: #8B7D6B;  
+    --brown-mix-5: #3E2723; 
+
+    --space-sm: 10px;
+    --space-md: 20px;
+    --space-lg: 30px;
+    --space-xl: 40px;
+}
 *{
     padding: 0%;
     margin: 0%;
@@ -19,7 +31,7 @@ header{
     padding: 40px;
     height: 100px;
     z-index: 9;
-    background-color: #27181d
+    background-color: var(--brown-mix-5)
 }
 
 .navbar{
@@ -75,7 +87,7 @@ header{
 
 .Hero{
     height: 800px;
-    background-color: #3a222b;
+    background-color: var(--brown-mix-4);
 }
 .Hero .container{
     position: absolute;
@@ -123,7 +135,8 @@ header{
   height: 800px;        
   display: flex;
   align-items: center;      
-  justify-content: left;  
+  justify-content: left; 
+  background-color: var(--brown-mix-3); 
 }
 .details-div {
   padding: 140px 395px;         ;
@@ -156,7 +169,7 @@ header{
     transition: .3s;
 }
 .Services{
-    background-color: #3a222b;
+    background-color: var(--brown-mix-2);
     color: rgb(255, 255, 255);
     height: 620px;
 }
@@ -199,7 +212,7 @@ header{
 /*   works section here !! */
 
 .gallery{
-    
+    background-color: var(--brown-mix-1);
     color: rgb(255, 255, 255);
     height: 1600px;
 }
