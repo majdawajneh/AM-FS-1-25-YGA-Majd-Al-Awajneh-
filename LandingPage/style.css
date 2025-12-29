@@ -388,3 +388,46 @@ footer .lastone{
 .services-grid .service-icon{
     font-size: 60px;
 }
+
+/* About me section !.. */
+
+.aboutme p{
+    height: 700px;
+    padding: 50px  400px;
+    text-align: left;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* Contact area here ! */
+.contact h1{
+    color: white;
+    text-align: center;
+    padding: 80px;
+}
+.contact .contact-form{
+    padding: 25px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #c48136;
+    position: absolute;
+    left: 600px;
+    width: 800px;
+    height: 500px;
+    font-size: 25px;
+}
+.contact-form label{
+    color: white;
+}
+.contact-form input{
+    width: 300px;
+    height: 50px;
+    background-color: #c48136;
+    font-size: 25px;
+}
+.contact-form textarea{
+    height: 120px;
+    width: 400px;
+}
