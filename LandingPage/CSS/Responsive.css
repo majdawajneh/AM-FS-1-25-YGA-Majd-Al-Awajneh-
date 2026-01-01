@@ -1,0 +1,411 @@
+
+/* ===== for Ipad 1024" screen ===== */
+
+@media (max-width: 1024px){
+
+    /* ==== Header Part ==== */
+    .navbar{
+        gap: 70px;
+    }
+    .logo{
+        position: absolute;
+        top: 30px;
+        left: 60px;
+    }
+    .logo a{
+        text-decoration: none;
+        color: #c48136;
+        font-size: 28px;
+        font-weight: 200;
+    }
+    .nav-links{
+        position: absolute;
+        right: 310px;
+        display: flex;
+        list-style: none;
+        justify-content: center;
+        gap: 40px;
+    }
+    .nav-links a{
+        color: #c48136;
+        text-decoration: none;
+        font-size: 16px;
+        transition: 0.5s;
+    }
+    .nav-links a:hover{
+        color: rgb(255, 255, 255);
+        font-size: 18px;
+        transition: 0.5s;
+    }
+    .Lets-Talk{
+        position: absolute;
+        right: 80px;
+        top: 30px;
+        padding-top: 10px;
+        display: inline-block;
+        text-align: center;
+        width: 110px;
+        height: 40px;
+        border: 1px solid #c48136;
+        background: transparent;
+        text-decoration: none;
+        color:#c48136;
+        font-size: 16px;
+        transition: .3s;
+    }
+    .Lets-Talk:hover{
+        color: #ffffff;
+        background-color: #c48136;
+        transition: .3s;
+    }
+
+    
+    /* ==== Hero Section Here ==== */
+    .Hero{
+        height: 400px;
+    }
+    .Hero .container{
+        position: absolute;
+        padding: 100px 150px;
+        display: flex;
+        align-items: center;      /* توسيط عامودي */
+        justify-content: center;
+        font-size: 30px;
+        border-top: #c48136;
+        line-height: 5px;
+    }
+    .Hero h2{
+    line-height: 50px;
+    }
+    .Hero .hero1p{
+        color: white;
+        font-weight: 200;
+    }
+    .Hero .hero2p{
+        color: #c48136;
+        font-weight: 200;
+    }
+    .Hero a{
+        display: inline-block;
+        text-align: center;
+        padding-top: 17px;
+        width: 150px;
+        height: 40px;
+        border: 1px solid #c48136;
+        background: transparent;
+        text-decoration: none;
+        color: #c48136;
+        font-size: 20px;
+        transition: .3s;
+    }
+    .Hero a:hover {
+        color: white;
+        background-color: #c48136;
+    }
+    
+    /* ==== Details Section Here ==== */
+
+    .Details {
+        height: 400px;       
+        display: flex;
+        align-items: center;      
+        justify-content: center;
+        background: linear-gradient(90deg, #1f140b, #2e261f);  
+    }
+    .details-div {
+        position: absolute;
+        top: 400px;
+        right: 45px;
+        line-height: 30px;     
+        font-size: 20px;
+        color: white;
+    }
+    .Details h1{
+        width: 500px;
+        font-size: 25px;
+        font-weight: 200;
+    }
+    .details-p{
+        width: 10px;
+        color: grey;
+        line-height: 25px;
+        width: 500px;
+        word-wrap: break-word;
+    }
+    .Details .cv-button{
+        display: inline-block;
+        text-align: center;
+        padding-top: 5px;
+        width: 120px;
+        height: 40px;
+        border: 1px solid #c48136;
+        background: transparent;
+        text-decoration: none;
+        color:#c48136;
+        font-size: 16px;
+        transition: .3s;
+    }
+    .cv-button:hover{
+        color: white;
+        background-color: #c48136;
+        transition: .3s;
+    }
+
+    /* ==== services section ==== */
+
+    .Services{
+        color: rgb(255, 255, 255);
+        height: 500px;
+        background: linear-gradient(90deg, #251a11, #3d342c);
+    }
+    .Services .title{
+        position: absolute;
+        padding: 50px 50px;
+        font-size: 25px;
+        font-weight: bold;
+    }
+    .services-cards{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2%;
+        padding-top: 13%;
+        line-height: 1%;
+    }
+    .services-cards .card{
+        display: flex;
+        flex-direction: column;
+        padding: 95px 15px;
+        text-align: center;
+        border: 1px solid #c48136;
+        height: 280px;
+        width: 280px;
+    }
+    .services-cards p{
+        padding: 30px;
+        width: 250px;
+    }
+    .services-cards .p1{
+        font-size: 16px;
+        color: #c48136;
+    }
+    .services-cards .p2{
+        color: rgba(255, 255, 255, 0.548);
+    }
+
+    /* ==== Gallery section here ==== */
+    .gallery{
+        color: #c48136;
+        height: 1000px;
+        background: linear-gradient(90deg, #2c1d11, #584d42);
+    }
+    .gallery h1{
+        position: absolute;
+        padding: 40px 60px;
+        font-weight: 600;   
+        color: white;
+        font-size: 30px;
+    }
+    .home-gallery-pic{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 50px;
+        justify-content: center;
+        align-items: center;
+        height: 865px;
+        padding: 110px 450px;
+    }
+    .home-gallery-pic img{
+        height: 300px;
+        width: 250px;
+        border-radius: 2%;
+        border: 1px solid rgba(255, 255, 255, 0.452);
+        transition: 0.5s;
+    }
+    .home-gallery-pic img:hover{
+        height: 300px;
+        width: 250px;
+        transition: 0.5s;
+        opacity: 30%;
+    }
+    .home-gallery-pic a{
+        color: #c48136;
+        text-decoration: none;
+        font-size: 20px;
+        transition: color 1s;
+        font-weight: bold;
+    }
+    .home-gallery-pic a:hover{
+        text-decoration: underline;
+        transition: 1s;
+    }
+        .gallery .more-works{
+        position: absolute;
+        left: 310px;
+        display: inline-block;
+        text-align: center;
+        padding: 10px;
+        width: 400px;
+        height: 45px;
+        border: 1px solid #c48136;
+        background: transparent;
+        text-decoration: none;
+        color:#c48136;
+        font-size: 18px;
+        transition: .3s;
+        font-weight: bold;
+    }
+    .more-works:hover{
+        background-color: #c48136;
+        color: white;
+    }
+    /* FOOTER SECTION HERE ...! */
+    footer{
+        height: 820px;
+        color: white;
+        background: linear-gradient(90deg, #1f140b, #2e261f);
+    }
+    footer h1{
+        text-align: left;
+        padding: 100px 100px;
+        font-size: 30px;
+    }
+    footer a{
+        color: #c48136;
+        text-decoration: none;
+    }
+    footer a:hover{
+        color: #c4823688;
+    }
+    footer .lastone{
+        text-align: center;
+        padding-top: 110px;
+        color: rgba(255, 255, 255, 0.616);
+    }
+}
+
+
+/* ******************************************************************************************************************************************************** */
+/* Gallery page responsivity  (1024px) */
+
+@media (max-width: 1024px){
+    .Last-Works{
+        color: #c48136;
+        height: 1000px;
+        background: linear-gradient(90deg, #2c1d11, #584d42);
+    }
+    .Last-Works h1{
+        position: absolute;
+        padding: 80px 50px;
+        font-weight: 600;   
+        color: white;
+        font-size: 30px;
+    }
+    .last-works-pic{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 50px;
+        justify-content: center;
+        align-items: center;
+        height: 865px;
+        padding: 180px 450px;
+    }
+    .last-works-pic img{
+        height: 270px;
+        width: 280px;
+        border-radius: 2%;
+        border: 1px solid rgba(255, 255, 255, 0.452);
+        transition: 0.5s;
+    }
+    .last-works-pic img:hover{
+        height: 280px;
+        width: 290px;
+        opacity: 30%;
+    }
+    .last-works-pic a{
+        color: #c48136;
+        text-decoration: none;
+        font-size: 20px;
+        transition: color 1s;
+        font-weight: bold;
+    }
+    .last-works-pic a:hover{
+        text-decoration: underline;
+        transition: 1s;
+    }
+}
+
+/* ******************************************************************************************************************************************************* */
+/* Services Page resposivity */
+
+@media (max-width: 1024px){
+    .Services{
+        height: 600px;
+    }
+    .Services h2{
+    color: white;
+    position: absolute;
+    padding: 40px 60px;
+    font-size: 25px;
+    }
+    .services-grid{
+        height: 600px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 30PX;
+    }
+    .services-grid .service{
+        width: 300px;
+        height: 360px;
+        padding: 20px;
+        border: 1px solid #c48136;
+        color: white;
+        text-align: center;
+        font-size: 12px;
+    }
+    .services-grid .service p{
+        color: rgba(255, 255, 255, 0.774);
+    }
+    .services-grid .service .content1{
+        width: 300px;
+        position: absolute;
+        padding: 40px;
+        left: 31px;
+        line-height: 40px;
+
+    }
+    .services-grid .service .content2{
+        width: 300px;
+        position: absolute;
+        padding: 40px;
+        left: 365px;
+        line-height: 40px;
+    }
+    .services-grid .service .content3{
+        width: 300px;
+        position: absolute;
+        padding: 40px;
+        right: 33px;
+        line-height: 40px;
+    }
+    .services-grid .service a{
+        text-decoration: none;
+        color: #c48136;
+        display: inline-block;
+        border: 1px solid #c48136;
+        transition: 0.5s;
+        width: 180px;
+        height: 50px;
+        font-weight: bold;
+    }
+    .services-grid .service a:hover{
+        color: white;
+        background-color: #c48136;
+        transition: 0.5s;
+    }
+    .services-grid .service-icon{
+        font-size: 50px;
+    }
+
+}
