@@ -15,7 +15,7 @@ body{
 /* Here Navigation and header css */
 
 header{
-    padding: 40px;
+    padding: 30px;
     height: 100px;
     z-index: 9;
     background: linear-gradient(90deg, #1f140b, #332b24);
@@ -25,34 +25,37 @@ header{
     list-style: none;
     justify-content: center;
     gap: 400px;
+    position: sticky;
+    top: 0;
 }
 .logo a{
     text-decoration: none;
     color: #c48136;
-    font-size: 38px;
+    font-size: 35px;
     font-weight: 200;
 }
 .nav-links{
+    padding: 10px;
     display: flex;
     list-style: none;
     justify-content: center;
-    gap: 40px;
+    gap: 50px;
 }
 .nav-links a{
     color: #c48136;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 20px;
     transition: 0.5s;
 }
 .nav-links a:hover{
     color: rgb(255, 255, 255);
-    font-size: 20px;
+    font-size: 21px;
     transition: 0.5s;
 }
 .Lets-Talk{
     display: inline-block;
     text-align: center;
-    padding-top: 15px;
+    padding: 15px;
     width: 170px;
     height: 50px;
     border: 1px solid #c48136;
@@ -61,6 +64,7 @@ header{
     color:#c48136;
     font-size: 18px;
     transition: .3s;
+    border-radius: 50px;
 }
 .Lets-Talk:hover{
     color: #ffffff;
@@ -107,6 +111,7 @@ header{
     color:#c48136;
     font-size: 18px;
     transition: .3s;
+    border-radius: 50px;
 }
 .view-works:hover{
     color: white;
@@ -147,6 +152,7 @@ header{
     color:#c48136;
     font-size: 18px;
     transition: .3s;
+    border-radius: 50px;
 }
 .cv-button:hover{
     color: white;
@@ -154,7 +160,7 @@ header{
     transition: .3s;
 }
 
-/* ==== services section ==== */
+/* ==== Services Section Here ==== */
 .Services{
     color: rgb(255, 255, 255);
     height: 620px;
@@ -169,39 +175,48 @@ header{
     line-height: 1%;
 }
 .services-cards .card{
-    padding-top: 6%;
+    padding-top: 4%;
     text-align: center;
     border: 1px solid #c48136;
     height: 370px;
     width: 450px;
+    background: linear-gradient(300deg,#181009,#3d352d);
+    border-radius: 30px;
 }
 .Services .title{
     position: absolute;
     padding: 60px 255px;
     font-size: 35px;
 }
+.home-service-icon{
+    padding: 10px 100px;
+    font-size: 50px;
+}
 .services-cards p{
-    padding: 50px;
-    width: 450px;
+    position: absolute;
+    padding: 90px 30px;
+    width: 440px;
 }
 .services-cards .p1{
-    font-size: 30px;
+    font-size: 20px;
     color: #c48136;
 }
 .services-cards .p2{
+    position: absolute;
+    padding: 180px 10px;
     color: rgba(255, 255, 255, 0.548);
 }
 /*   works section here !! */
 
 .gallery{
-    height: 1300px;
+    height: 800px;
     background: linear-gradient(90deg, #2c1d11, #584d42);
 }
 .gallery h1{
     position: absolute;
     padding: 60px 255px;
     color: white;
-    font-size: 35px;   
+    font-size: 40px;   
 }
 .home-gallery-pic{
     display: grid;
@@ -209,14 +224,15 @@ header{
     gap: 50px;
     justify-content: center;
     align-items: center;
-    height: 1150px;
+    height: 650px;
     padding: 150px 450px;
 }
 .home-gallery-pic img{
     height: 400px;
     width: 450px;
     border-radius: 2%;
-    border: 1px solid rgba(255, 255, 255, 0.452);
+    border: none;
+    outline: none;
     transition: 0.5s;
 }
 .home-gallery-pic img:hover{
@@ -251,6 +267,7 @@ header{
     font-size: 18px;
     transition: .3s;
     font-weight: bold;
+    border-radius: 50px;
 }
 .more-works:hover{
     background-color: #c48136;
@@ -354,6 +371,8 @@ footer .lastone{
     color: white;
     text-align: center;
     font-size: 14px;
+    background: linear-gradient(300deg,#1a1008,#4b4137);
+    border-radius: 30px;
 }
 .services-grid .service p{
     color: rgba(255, 255, 255, 0.774);
@@ -389,6 +408,7 @@ footer .lastone{
     width: 180px;
     height: 50px;
     font-weight: bold;
+    border-radius: 50px;
 }
 .services-grid .service a:hover{
     color: white;
@@ -401,6 +421,9 @@ footer .lastone{
 
 /* About me section !.. */
 
+.aboutme{
+    height: 500px;
+}
 .aboutme p{
     height: 700px;
     padding: 50px  400px;
@@ -410,37 +433,82 @@ footer .lastone{
     font-size: 20px;
 }
 
-/* Contact area here ! */
-.contact{
-    height: 1000px;
+
+/* ==== Contact Page here ==== */
+
+.contact-container{
+    height: 80vh;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: 'outfit';
+    background: linear-gradient(150deg, #291c10, #463d35);
 }
-.contact h1{
-    color: white;
-    text-align: center;
-    padding: 80px;
-}
-.contact .contact-form{
-    padding: 25px;
-    text-align: left;
+.contact-left{
     display: flex;
     flex-direction: column;
-    border: 1px solid #c48136;
-    position: absolute;
-    left: 600px;
-    width: 800px;
-    height: 500px;
-    font-size: 25px;
+    justify-content: start;
+    gap: 20px;
 }
-.contact-form label{
-    color: white;
+.contact-left-title h2{
+    font-weight: 600;
+    font-size: 40px;
+    margin-bottom: 5px;
+    color: #c48136;
 }
-.contact-form input{
-    width: 300px;
-    height: 50px;
-    background-color: #c48136;
-    font-size: 25px;
+.contact-left-title hr{
+    border: none;
+    width: 230px;
+    height: 5px;
+    background: linear-gradient(130deg,#3d352d,#c48136);
+    border-radius: 10px;
+    margin-bottom: 20px;
 }
-.contact-form textarea{
-    height: 120px;
+.contact-inputs{
     width: 400px;
+    height: 50px;
+    border: none;
+    outline: none;
+    font-weight: 500;
+    padding-left: 15px;
+    color: white;
+    font-size: 18px;
+    border-radius: 50px;
+    background: linear-gradient(270deg,#c48136,#3b342c);
+}
+.contact-left textarea{
+    height: 140px;
+    padding-top: 15px;
+    border-radius: 20px;
+}
+.contact-inputs:focus{
+    border: 2px solid #c48136;
+}
+.contact-inputs::placeholder{
+    color: #cccccc;
+    font-size: 15px;
+}
+.contact-left button{
+    display: flex;
+    align-items: center;
+    padding: 15px 25px;
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+    gap: 10px;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(270deg,#c48136,#584d42);
+    cursor: pointer;
+    width: 150px;
+}
+.contact-left button img{
+    height: 33px;
+    width: 33px;
+}
+.contact-right img{
+    height: 550px;
+    width: 450px;
+    border-radius: 50px;
 }
