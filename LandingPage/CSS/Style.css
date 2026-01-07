@@ -1,3 +1,4 @@
+
 *{
     padding: 0%;
     margin: 0%;
@@ -5,11 +6,26 @@
     font-family:'Montserrat', sans-serif;
 }
 body{
-    background: linear-gradient(90deg, #1f140b, #332b24);
     height: 100vh;
     overflow-x: hidden;
     font-family:'Montserrat', sans-serif;
     animation: fadeIn 1.2s ease forwards;
+    background-color: black;
+}
+
+/* *************************************************************************************************************************************************** */
+/* *************************************************************************************************************************************************** */
+/* *************************************************************************************************************************************************** */
+/* *************************************************************************************************************************************************** */
+
+.first-back-video{
+    position: absolute;
+    top: 0px; /* ليمتد لأعلى ليغطي الهيدر */
+    left: 0;
+    width: 100%;
+    height: 95%; /* إضافة ارتفاع الهيدر */
+    object-fit: cover;
+    z-index: -1;
 }
 
 /* Here Navigation and header css */
@@ -17,8 +33,8 @@ body{
 header{
     padding: 30px;
     height: 100px;
-    z-index: 9;
-    background: linear-gradient(90deg, #1f140b, #332b24);
+    z-index: 999;
+    background: transparent;
 }
 .navbar{
     display: flex;
@@ -46,6 +62,7 @@ header{
     text-decoration: none;
     font-size: 20px;
     transition: 0.5s;
+    font-weight: 600;
 }
 .nav-links a:hover{
     color: rgb(255, 255, 255);
@@ -65,6 +82,7 @@ header{
     font-size: 18px;
     transition: .3s;
     border-radius: 50px;
+    font-weight: bold;
 }
 .Lets-Talk:hover{
     color: #ffffff;
@@ -76,28 +94,35 @@ header{
 
 .Hero{
     height: 800px;
-    background: linear-gradient(90deg, #1f140b, #362f27);
+
 }
 .Hero .container{
     position: absolute;
-    padding: 280px 395px;
+    padding: 180px 320px;
     display: flex;
     align-items: center;      /* توسيط عامودي */
     justify-content: left;
     font-size: 35px;
-    border-top: #c48136;
-    animation: fadeIn 3s ease forwards;
+}
+.Hero .hero1p{
+    animation-name: hero-coloring;
+    animation-duration: 5s;
 }
 .Hero h2{
     line-height: 70px;
+
+}
+.majd{
+    color: #c48136;
 }
 .Hero .hero1p{
     color: white;
-    font-weight: 200;
+    font-weight: bold;
 }
 .Hero .hero2p{
     color: #c48136;
-    font-weight: 200;
+    font-weight: bold;
+    font-size: 40px;
 }
 .view-works{
     display: inline-block;
@@ -110,6 +135,7 @@ header{
     text-decoration: none;
     color:#c48136;
     font-size: 18px;
+    font-weight: bold;
     transition: .3s;
     border-radius: 50px;
 }
@@ -126,18 +152,22 @@ header{
   display: flex;
   align-items: center;      
   justify-content: left;
-  background: linear-gradient(90deg, #1f140b, #2e261f);  
+  background: transparent;
+  background: linear-gradient(50deg,black,rgb(134, 119, 110));
+  border-top-left-radius: 50% 10%; /* 50% عرض، 20% ارتفاع */
+  border-top-right-radius: 50% 10%;
+  border-top: 2px solid #c48136;
 }
 .details-div {
-  padding: 140px 395px;     
+  padding: 50px 395px;     
   font-size: 16px;
-  color: white;
+  color: #c48136;
 }
 .Details h1{
     width: 800px;
 }
 .Details p{
-    color: grey;
+    color: rgb(172, 171, 171);
     line-height: 50px;
 }
 .Details .cv-button{
@@ -151,6 +181,7 @@ header{
     text-decoration: none;
     color:#c48136;
     font-size: 18px;
+    font-weight: bold;
     transition: .3s;
     border-radius: 50px;
 }
@@ -163,29 +194,33 @@ header{
 /* ==== Services Section Here ==== */
 .Services{
     color: rgb(255, 255, 255);
-    height: 620px;
-    background: linear-gradient(90deg, #251a11, #3d342c);
+    height: 700px;
+    background: transparent;
+    border-bottom-left-radius: 50% 0%; /* 50% عرض، 20% ارتفاع */
+    border-bottom-right-radius: 50% 0%;
+    background: linear-gradient(150deg,black,rgb(138, 119, 107));
 }
 .services-cards{
     display:flex;
     align-items: center;
     justify-content: center;
     gap: 2%;
-    padding-top: 8%;
+    padding-top: 10%;
     line-height: 1%;
 }
 .services-cards .card{
     padding-top: 4%;
     text-align: center;
-    border: 1px solid #c48136;
+    border: 2px solid #c48136;
+    z-index: 2;
     height: 370px;
     width: 450px;
-    background: linear-gradient(300deg,#181009,#3d352d);
+    background: transparent;
     border-radius: 30px;
 }
 .Services .title{
     position: absolute;
-    padding: 60px 255px;
+    padding: 120px 255px;
     font-size: 35px;
 }
 .home-service-icon{
@@ -210,7 +245,7 @@ header{
 
 .gallery{
     height: 800px;
-    background: linear-gradient(90deg, #2c1d11, #584d42);
+    background: linear-gradient(590deg, #422b12, #000000);
 }
 .gallery h1{
     position: absolute;
@@ -230,7 +265,7 @@ header{
 .home-gallery-pic img{
     height: 400px;
     width: 450px;
-    border-radius: 2%;
+    border-radius: 10%;
     border: none;
     outline: none;
     transition: 0.5s;
@@ -279,7 +314,7 @@ header{
 footer{
     height: 520px;
     color: white;
-    background: linear-gradient(90deg, #1f140b, #2e261f);
+    background: linear-gradient(590deg, #2b1c0c, #000000);
 }
 footer h1{
     text-align: left;
@@ -304,6 +339,8 @@ footer .lastone{
 /* Gallery Page Section !!!!! */
 .Last-Works{
     height: 1250px;
+    background: transparent;
+    z-index: 999;
 }
 .Last-Works h1{
     color: white;
@@ -316,19 +353,20 @@ footer .lastone{
     gap: 50px;
     justify-content: center;
     align-items: center;
-    height: 1100px;
+    height: 1000px;
     padding: 180px 450px;
+    background: transparent;
 }
 .last-works-pic img{
-    height: 400px;
-    width: 450px;
-    border-radius: 2%;
+    height: 350px;
+    width: 400px;
+    border-radius: 10%;
     border: 1px solid rgba(255, 255, 255, 0.452);
     transition: 0.5s;
 }
 .last-works-pic img:hover{
-    height: 450px;
-    width: 500px;
+    height: 380px;
+    width: 420px;
     transition: 0.5s;
     opacity: 30%;
 }
@@ -347,14 +385,15 @@ footer .lastone{
 
 /* ********************************************************************************************************************************************************************** */
 /* SERVICES page SECTION HERE...! */
-.Services{
+.Services-page{
     height: 700px;
 }
-.Services h2{
+.Services-page h2{
     color: white;
     position: absolute;
-    padding: 60px 100px;
-    font-size: 35px;
+    padding: 70px 100px;
+    font-size: 30px;
+
 }
 .services-grid{
     height: 700px;
@@ -512,3 +551,12 @@ footer .lastone{
     width: 450px;
     border-radius: 50px;
 }
+
+
+/* ============================================================================================================================================================================= */
+/* ============================================================================================================================================================================= */
+/* ======================================================              KEY FRAMES PART     ================================================================= */
+/* ============================================================================================================================================================================= */
+/* ============================================================================================================================================================================= */
+
+
