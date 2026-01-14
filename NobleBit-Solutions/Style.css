@@ -1,0 +1,160 @@
+:root{
+    --black-color: #000000;
+    --darkgrey-color: rgb(27, 27, 27);
+    --section-color: #e7e6e6a9;
+    --dark-section-color: #4b4b4b;
+    --purple-color: #bd86f0f1;
+    --light-purple-color: #bd86f07e;
+    --yellow-color: #ffba25;
+}
+body{
+    font-family: "Poppins", sans-serif;
+}
+
+.navbar{
+    background-color: var(--black-color);
+}
+.navbar .navbar-nav .nav-link{
+    color: white;
+    font-size: 1.1rem;
+}
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link.active{
+    color: var(--purple-color);
+}
+.navbar .navbar-brand img{
+     height: 100px;
+     width: 110px;
+     border: 2px solid var(--purple-color);
+     border-radius: 48px;
+}
+.navbar .navbar-toggler{
+    color: white;
+    font-size: 25px;
+    border: 1px solid white;
+}
+.navbar .navbar-toggler:focus{
+    box-shadow: none;
+}
+.navbar .navbar-toggler[aria-expanded="true"]{
+    color: var(--purple-color);
+    border-color: var(--purple-color);
+}
+.container .navbar-brand-name{
+    color: white;
+    font-size: 25px;
+}
+
+    /* ==== start landing ===== */
+
+.landing{
+    background-color: var(--darkgrey-color);
+    height: calc(90vh - 106px);
+}
+.landing .text-center a{
+    color: white;
+    font-weight: 500;
+    background-color: var(--purple-color);
+    transition: .3s;
+}
+.landing .text-center a:hover{
+    font-size: 17px;
+    color: var(--purple-color);
+    background-color: white;
+    transform: scaleX(1.1);
+    transition: .4s;
+}
+
+    /* ==== end landing ===== */
+
+    /* ==== start features */
+
+.main-title h1{
+    color: var(--purple-color);
+}
+.features .icon-holder{
+    height: 200px;
+}
+.features .icon-holder i{
+    left: 50%;
+    transform: translateX(-50%);
+}
+.features .icon-holder .number{
+    font-size: 12rem;
+    color: var(--section-color);
+}
+.features .icon-holder .icon{
+    color: var(--purple-color);
+}
+.features h2{
+    color: var(--yellow-color);
+}
+.features .main-title img{
+    height: 190px;
+    width: 210px;
+}
+.inside-the-box{
+    padding: 10px;
+    border: 2px solid var(--purple-color);
+    border-radius: 20px;
+}
+.main-title::after{
+    content: ' ';
+    width: 180px;
+    height: 2px;
+    background-color: var(--purple-color);
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+    /* ==== end features ==== */
+
+    /* ==== start gallery ==== */
+
+.gallery{
+    background-color: var(--dark-section-color);
+}
+.gallery .container h1{
+    color: white;
+}
+.gallery ul .active{
+    color: white;
+    background-color: var(--purple-color);
+}
+.gallery ul li{
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 50px;
+    color: white;
+}
+.gallery ul li:not(.active):hover{
+    color: var(--purple-color);
+}
+.gallery .box{
+    color: white;
+    padding: 5px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+}
+.gallery .box::before{
+    content: attr(data-gallery);
+    background-color: var(--purple-color);
+    position: absolute;
+    width: 100%
+}
+.gallery .btn{
+    color: white;
+    font-weight: 500;
+    background-color: var(--purple-color);
+    transition: .3s;
+}
+.gallery .btn:hover{
+    font-size: 17px;
+    color: var(--purple-color);
+    background-color: white;
+    transform: scaleX(1.1);
+    transition: .4s;
+}
