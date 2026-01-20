@@ -2,8 +2,9 @@
     --black-color: #000000;
     --darkgrey-color: rgb(27, 27, 27);
     --section-color: #e7e6e6a9;
-    --dark-section-color: #4b4b4b;
+    --grey-section-color: #747272;
     --purple-color: #bd86f0f1;
+    --dark-purple-color: #a34af7f1;
     --light-purple-color: #bd86f07e;
     --yellow-color: #ffba25;
 }
@@ -23,10 +24,8 @@ body{
     color: var(--purple-color);
 }
 .navbar .navbar-brand img{
-     height: 100px;
-     width: 110px;
-     border: 2px solid var(--purple-color);
-     border-radius: 48px;
+     height: 90px;
+     width: 100px;
 }
 .navbar .navbar-toggler{
     color: white;
@@ -69,7 +68,8 @@ body{
 
     /* ==== start features */
 
-.main-title h1{
+
+.features .main-title h1{
     color: var(--purple-color);
 }
 .features .icon-holder{
@@ -93,12 +93,12 @@ body{
     height: 190px;
     width: 210px;
 }
-.inside-the-box{
+.features .inside-the-box{
     padding: 10px;
     border: 2px solid var(--purple-color);
     border-radius: 20px;
 }
-.main-title::after{
+.features .main-title::after{
     content: ' ';
     width: 180px;
     height: 2px;
@@ -114,7 +114,7 @@ body{
     /* ==== start gallery ==== */
 
 .gallery{
-    background-color: var(--dark-section-color);
+    background-color: var(--grey-section-color);
 }
 .gallery .container h1{
     color: white;
@@ -158,3 +158,77 @@ body{
     transform: scaleX(1.1);
     transition: .4s;
 }
+    /* ==== End Gallery ====  */
+            /* \\ */
+    /* ==== start stuff ====  */   
+
+.stuff .main-title img{
+    height: 190px;
+    width: 210px;
+}
+.stuff .row img{
+    width: 800px;
+}
+.stuff .btn{
+    color: white;
+    font-weight: 500;
+    background-color: var(--purple-color);
+    transition: .3s;
+}
+.stuff .btn:hover{
+    font-size: 17px;
+    color: var(--purple-color);
+    border: 1px solid var(--purple-color);
+    transform: scaleX(1.1);
+    transition: .4s;
+}
+    /* ==== end stuff ====  */   
+
+    /* ==== start team ====  */   
+
+.team{
+    background-color: var(--grey-section-color);
+}
+.team h2{
+    color: white;
+}
+.team h4{
+    background-color: var(--purple-color);
+}
+.team .box{
+    border-radius: 60px;
+}
+
+    /* ==== end team ====  */
+    
+    /* ==== start techs ====  */   
+.techs{
+    background-color: var(--section-color);
+}
+.techs img{
+    height: 130px;
+    width: 130px;
+}
+
+    /* ==== end techs ====  */   
+
+.Pricing{
+    background-color: var(--darkgrey-color);
+}
+.Pricing .row .box{
+    text-align: left;
+    border: 1px solid var(--purple-color);
+    border-radius: 50px;
+}
+.Pricing .btn{
+    background-color: var(--purple-color);
+    color: white;
+    width: 300px;
+}
+.Pricing .btn:hover{
+    color: var(--purple-color);
+    background-color: white;
+    transition: 0.3s;
+}
+
+
