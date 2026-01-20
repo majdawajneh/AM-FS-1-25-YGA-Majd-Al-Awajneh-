@@ -187,7 +187,7 @@ body{
     /* ==== start team ====  */   
 
 .team{
-    background-color: var(--grey-section-color);
+    background-color: var(--darkgrey-color);
 }
 .team h2{
     color: white;
@@ -206,11 +206,12 @@ body{
     background-color: var(--section-color);
 }
 .techs img{
-    height: 130px;
-    width: 130px;
+    height: 120px;
+    width: 120px;
 }
 
     /* ==== end techs ====  */   
+    /* ==== start pricing ====  */   
 
 .Pricing{
     background-color: var(--darkgrey-color);
@@ -223,7 +224,7 @@ body{
 .Pricing .btn{
     background-color: var(--purple-color);
     color: white;
-    width: 300px;
+    width: 260px;
 }
 .Pricing .btn:hover{
     color: var(--purple-color);
@@ -231,4 +232,40 @@ body{
     transition: 0.3s;
 }
 
+    /* ==== end pricing ====  */  
+    /* ==== start footer ====  */   
 
+.footer{
+    background-color: var(--grey-section-color);
+}
+.footer img{
+    height: 120px;
+    width: 130px;
+}
+.footer .links a{
+    text-decoration: none;
+    color: var(--section-color);
+    transition: 0.5s;
+}
+.footer .links a:hover{
+    font-size: 18px;
+    color: var(--dark-purple-color);
+    transition: 0.5s;
+}
+.footer .btn{
+    color: white;
+    background-color: var(--purple-color);
+}
+.footer .btn:hover{
+    color: var(--purple-color);
+    background-color:white;
+    font-weight: 600;
+}
+.footer ul li i{
+    font-size: 25px;
+    color: #bebebe;
+}
+.footer i:hover{
+    color: white;
+    background: none;
+}
